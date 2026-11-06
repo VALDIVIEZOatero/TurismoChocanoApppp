@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nueva Reserva - Venta Directa"
+                android:textColor="#C8102E"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="DNI del Pasajero (8 dígitos)"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDniPasajero"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#F0F0F0"
+                android:hint="Ingrese DNI"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingHorizontal="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nombres y Apellidos Completos"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNombrePasajero"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#F0F0F0"
+                android:hint="Ej. Juan Pérez"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Origen"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spOrigen"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#F0F0F0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Destino"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spDestino"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#F0F0F0" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Fecha de Viaje (Año 2026)"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSeleccionarFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#555555"
+                android:text="Seleccionar Fecha"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvFechaSeleccionada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Fecha: No seleccionada"
+                android:textColor="#333333"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Seleccionar Asiento (1 al 10)"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spAsiento"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#F0F0F0" />
+
+            <Button
+                android:id="@+id/btnConfirmarReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#C8102E"
+                android:padding="12dp"
+                android:text="Confirmar y Emitir Boleto"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnVolverDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#555555"
+                android:text="← Volver al Dashboard"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
